@@ -1,0 +1,28 @@
+name: Node.js CI - Unit & E2E tests
+
+env:
+  SUPABASE_URL: ${{secrets.SUPABASE_URL}}
+  SUPABASE_SECRET_ROLE_KEY: ${{secrets.SUPABASE_SECRET_ROLE_KEY}}
+
+on:
+  push:
+    branches: ["master", "develop"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{matrix.node-version}}
+        cache: 'npm'
+    - run: npm install
+    - run: npm run test && npm run test:e2e
+ 
