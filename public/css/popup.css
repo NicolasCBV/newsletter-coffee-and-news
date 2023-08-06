@@ -1,0 +1,40 @@
+#popup {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 50%);
+  display: grid;
+  place-content: center;
+  position: absolute;
+  z-index: 100;
+}
+
+#popup-content {
+  width: 88vw;
+  max-width: 42rem;
+
+  display: grid;
+  place-content: center;
+
+  height: 50vh;
+  max-height: 22rem;
+
+  background-color: #ffff;
+  border-radius: 0.8rem;
+
+  box-shadow: 8px 7px 12px rgb(0 0 0 / 71%);
+}
+
+#popup-wrapper {
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+
+  width: 70vw;
+  max-width: 30rem;
+}
+
+#popup-content .button, #popup-content .error-button {
+  margin-top: 1rem;
+}

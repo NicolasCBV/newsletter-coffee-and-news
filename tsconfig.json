@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "CommonJs",
+    "declaration": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2015",
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+
+    "resolveJsonModule": true,
+
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "paths": {
+      "@src/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@infra/*": ["src/infra/*"],
+      "@config/*": ["src/config/*"],
+      "@utils/*": ["src/utils/*"],
+      "@test/*": ["test/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "templates/**/*",
+    "./*.ts"
+  ]
+}

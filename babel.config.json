@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "module-resolver", {
+        "root": ["./src"],
+        "alias": {
+          "@app": "./src/app",
+          "@infra": "./src/infra",
+          "@config": "./src/config",
+          "@utils": "./src/utils",
+          "@src": "./src",
+          "@test": "./test"
+        }
+      }
+    ]
+  ],
+  "ignore": [
+    "**/*spec*",
+    "node_modules",
+    "test"
+  ]
+}

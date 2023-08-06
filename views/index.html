@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Coffee & News</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/popup.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="popup-container">
+    </div>
+    <main id="main">
+      <div class="container" id="form">
+        <div class="text">
+          <h1 id="title-name">
+            Coffe & News
+          </h1>
+          <div class="text-content">
+            <p>
+              📢 Quer estar sempre informado sobre os assuntos políticos mais relevantes do momento? Não perca a chance de se manter atualizado e fazer parte de uma comunidade apaixonada por debates e discussões construtivas sobre política.
+            </p>
+
+            <p>
+              🔍 Nossa newsletter é a fonte definitiva para análises imparciais, notícias de última hora e perspectivas aprofundadas sobre os eventos políticos mais impactantes. Receba diretamente em sua caixa de entrada as informações que realmente importam.
+            </p>
+          </div>
+        </div>
+        <form id="sender">
+          <input
+            id="email-input"
+            placeholder="Insira seu email"
+          />
+          <button class="button" type="submit">
+            Enviar
+          </button>
+        </form>
+      </div>
+      <div class="container" id="image">
+        <img class="desktop" src="/images/initialImage.jpg" alt="imagem de alguém segurando um café"/>
+        <img class="mobile" src="/images/mobileInitialImage.jpg" alt="imagem de alguém segurando um café"/>
+      </div>
+    </main>
+    <script type="module" src="javascript/main.js"></script>
+    <script type="module" src="javascript/popup-success.js"></script>
+    <script type="module" src="javascript/popup-error.js"></script>
+  </body>
+</html>
+
